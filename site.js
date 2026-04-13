@@ -27,6 +27,14 @@ function setActiveNavLink() {
   });
 }
 
+function renderSharedFooter() {
+  var footerHost = document.getElementById("site-footer");
+  if (!footerHost) return;
+
+  footerHost.innerHTML =
+    '<footer class="site-footer">© <span id="year"></span> Faisal Abuosbeh</footer>';
+}
+
 function setFooterYear() {
   var yearElement = document.getElementById("year");
   if (yearElement) {
@@ -35,5 +43,6 @@ function setFooterYear() {
 }
 
 renderSharedHeader();
+renderSharedFooter();
 setActiveNavLink();
 setFooterYear();
