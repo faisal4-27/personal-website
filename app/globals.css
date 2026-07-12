@@ -161,10 +161,11 @@ a {
   margin: 0;
   font-family: "Anton", "DM Sans", sans-serif;
   font-weight: 400;
-  font-size: clamp(4rem, 12vw, 9rem);
+  font-size: clamp(2rem, 9vw, 7rem);
   line-height: 1;
   letter-spacing: -0.01em;
   text-transform: uppercase;
+  white-space: nowrap;
   color: var(--foreground);
 }
 
@@ -374,6 +375,19 @@ a {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.experience-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.875rem;
+}
+
+.experience-logo {
+  height: 2.75rem;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
 }
 
 .experience-role {
