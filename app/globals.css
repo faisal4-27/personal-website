@@ -143,21 +143,10 @@ a {
   gap: 1.5rem;
 }
 
-.hero-name-row {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-}
-
-.hero-bar {
-  width: 0.5rem;
-  height: 6rem;
-  margin-top: 0.5rem;
-  background: var(--primary);
-  flex-shrink: 0;
-}
-
 .hero-title {
+  /* Both accent bars derive from these so they stay identical as the title scales. */
+  --bar-width: max(0.28rem, 0.07em);
+  --bar-height: 0.85em;
   margin: 0;
   font-family: "Anton", "DM Sans", sans-serif;
   font-weight: 400;
@@ -169,12 +158,20 @@ a {
   color: var(--foreground);
 }
 
+.hero-bar,
 .type-cursor {
   display: inline-block;
-  width: 0.07em;
-  height: 0.85em;
+  width: var(--bar-width);
+  height: var(--bar-height);
   background: var(--primary);
   vertical-align: middle;
+}
+
+.hero-bar {
+  margin-right: 0.16em;
+}
+
+.type-cursor {
   margin-left: 0.05em;
 }
 

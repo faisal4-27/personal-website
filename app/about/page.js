@@ -26,15 +26,9 @@ export default function AboutPage() {
             can actually maintain.
           </p>
           <p>
-            Outside of school I love staying active, and spending time with
-            friends and family.
+            Outside of school I love staying active — playing soccer, working
+            out, and running — and spending time with friends and family.
           </p>
-          <blockquote className="about-quote">
-            <p className="about-quote-text">
-              &quot;Build things that matter, and build them well.&quot;
-            </p>
-            <p className="about-quote-attr">— a principle I try to work by</p>
-          </blockquote>
         </div>
 
         <div className="about-side">
@@ -43,40 +37,39 @@ export default function AboutPage() {
           <div className="skill-group">
             <span className="skill-category">Languages</span>
             <div className="chip-row">
-              <span className="chip">TypeScript</span>
               <span className="chip">Python</span>
-              <span className="chip">Go</span>
+              <span className="chip">JavaScript</span>
+              <span className="chip">TypeScript</span>
+              <span className="chip">Java</span>
+              <span className="chip">C++</span>
               <span className="chip">SQL</span>
+              <span className="chip">HTML/CSS</span>
             </div>
           </div>
 
           <div className="skill-group">
-            <span className="skill-category">Frontend</span>
+            <span className="skill-category">Frameworks &amp; Libraries</span>
             <div className="chip-row">
               <span className="chip">React</span>
               <span className="chip">Next.js</span>
-              <span className="chip">Tailwind CSS</span>
-              <span className="chip">Figma</span>
+              <span className="chip">Express</span>
+              <span className="chip">FastAPI</span>
+              <span className="chip">Flask</span>
+              <span className="chip">Django</span>
             </div>
           </div>
 
           <div className="skill-group">
-            <span className="skill-category">Backend</span>
-            <div className="chip-row">
-              <span className="chip">Node.js</span>
-              <span className="chip">PostgreSQL</span>
-              <span className="chip">Redis</span>
-              <span className="chip">Docker</span>
-            </div>
-          </div>
-
-          <div className="skill-group">
-            <span className="skill-category">Tools</span>
+            <span className="skill-category">Developer Tools</span>
             <div className="chip-row">
               <span className="chip">Git</span>
-              <span className="chip">CI/CD</span>
+              <span className="chip">GitHub</span>
+              <span className="chip">Docker</span>
               <span className="chip">AWS</span>
-              <span className="chip">Linux</span>
+              <span className="chip">Azure</span>
+              <span className="chip">DigitalOcean</span>
+              <span className="chip">VS Code</span>
+              <span className="chip">Cursor</span>
             </div>
           </div>
 

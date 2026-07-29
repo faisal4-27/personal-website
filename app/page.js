@@ -8,12 +8,10 @@ export default function HomePage() {
   return (
     <div className="section-stack">
       <section className="hero">
-        <div className="hero-name-row">
+        <h1 className="hero-title" id="type-name">
           <span className="hero-bar" aria-hidden="true"></span>
-          <h1 className="hero-title" id="type-name">
-            <Typewriter text="Faisal Abuosbeh" />
-          </h1>
-        </div>
+          <Typewriter text="Faisal Abuosbeh" />
+        </h1>
         <p className="hero-subtitle">
           Systems Design Engineering @ University of Waterloo
         </p>
