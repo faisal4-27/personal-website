@@ -46,15 +46,6 @@ export default function ExperiencesPage() {
               and Spaces object storage, and prototyped UI in Figma before
               implementation.
             </p>
-            <div className="tag-row">
-              <span className="tag">TypeScript</span>
-              <span className="tag">Node.js</span>
-              <span className="tag">React</span>
-              <span className="tag">PostgreSQL</span>
-              <span className="tag">Docker</span>
-              <span className="tag">DigitalOcean</span>
-              <span className="tag">Figma</span>
-            </div>
           </div>
         </article>
 
@@ -80,11 +71,6 @@ export default function ExperiencesPage() {
               one-on-one help. Independently planned and taught a full lesson as a
               final project.
             </p>
-            <div className="tag-row">
-              <span className="tag">Leadership</span>
-              <span className="tag">Communication</span>
-              <span className="tag">Mentorship</span>
-            </div>
           </div>
         </article>
 
@@ -111,11 +97,6 @@ export default function ExperiencesPage() {
               attentive service at checkout, resolving patient questions and
               prescription concerns on the spot.
             </p>
-            <div className="tag-row">
-              <span className="tag">Fillware</span>
-              <span className="tag">Customer Service</span>
-              <span className="tag">Attention to Detail</span>
-            </div>
           </div>
         </article>
 
@@ -142,11 +123,6 @@ export default function ExperiencesPage() {
               and defusing conflicts among players, coaches, and spectators in
               fast-paced settings.
             </p>
-            <div className="tag-row">
-              <span className="tag">Coaching</span>
-              <span className="tag">Officiating</span>
-              <span className="tag">Conflict Resolution</span>
-            </div>
           </div>
         </article>
       </div>

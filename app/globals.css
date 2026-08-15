@@ -369,15 +369,15 @@ a {
 
 .experience-top {
   display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .experience-heading {
   display: flex;
   align-items: center;
   gap: 0.875rem;
+  min-width: 0;
 }
 
 .experience-logo {
@@ -399,7 +399,6 @@ a {
 }
 
 .experience-meta {
-  text-align: right;
   font-size: 0.875rem;
   color: var(--muted-foreground);
 }
@@ -416,15 +415,6 @@ a {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-top: 0.25rem;
-}
-
-.tag {
-  padding: 0.125rem 0.625rem;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  border: 1px solid var(--border);
-  color: var(--foreground);
 }
 
 /* ---------- Projects grid ---------- */
@@ -638,6 +628,17 @@ a {
 
   .experience-marker {
     display: flex;
+  }
+
+  .experience-top {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .experience-meta {
+    text-align: right;
+    flex-shrink: 0;
   }
 
   .projects-grid {
