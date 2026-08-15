@@ -16,7 +16,7 @@ export default function Header() {
     <header className="site-header">
       <nav className="nav-container" aria-label="Main navigation">
         <Link className="nav-brand" href="/">
-          Portfolio
+          Home
         </Link>
         <div className="nav-center">
           {NAV_LINKS.map((link) => (

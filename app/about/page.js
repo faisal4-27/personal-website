@@ -20,14 +20,13 @@ export default function AboutPage() {
             of Waterloo with a strong interest in software engineering and AI.
           </p>
           <p>
-            I love building products end to end — from the first sketch of an
-            idea to a polished, shipped experience. I care about clean
-            interfaces, thoughtful details, and writing code that other people
-            can actually maintain.
+            I love building things that are relevant to my own life and that I
+            have a genuine interest in. Everything I build starts as something I
+            actually wanted to exist, not just something to fill a portfolio.
           </p>
           <p>
-            Outside of school I love staying active — playing soccer, working
-            out, and running — and spending time with friends and family.
+            Outside of school I love playing soccer, working out, running, and
+            spending time with friends and family.
           </p>
         </div>
 
@@ -70,6 +69,7 @@ export default function AboutPage() {
               <span className="chip">DigitalOcean</span>
               <span className="chip">VS Code</span>
               <span className="chip">Cursor</span>
+              <span className="chip">Figma</span>
             </div>
           </div>
 

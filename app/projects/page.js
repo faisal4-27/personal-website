@@ -115,7 +115,8 @@ export default function ProjectsPage() {
             Airport. A CNN-based model is trained on real flight data to predict
             runway congestion before aircraft land, and those predictions are used
             to dynamically reroute gate taxi paths away from high-traffic areas,
-            reducing overall ground-movement delays.
+            reducing overall ground-movement delays. Built for the Industry 4.0
+            Case Competition, which it went on to win.
           </p>
           <div className="tag-row">
             <span className="tag-muted">Python</span>

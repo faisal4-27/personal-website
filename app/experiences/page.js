@@ -38,11 +38,13 @@ export default function ExperiencesPage() {
               </div>
             </div>
             <p className="experience-desc">
-              Built a multi-tenant SaaS platform that automated consulting
-              workflows, cutting consultant time by up to 50%. Designed 30+ REST
-              API endpoints backed by PostgreSQL, and containerized the app with
-              Docker and DigitalOcean using CI/CD pipelines for automated testing
-              and deployment.
+              Built MFA, a risk register, a compliance calendar, and a
+              multi-framework dashboard for a multi-tenant consulting SaaS
+              platform, cutting consultant time by up to 50%. Designed 25+ REST
+              API endpoints backed by PostgreSQL, deployed updates to a
+              DigitalOcean production environment with Mailgun email delivery
+              and Spaces object storage, and prototyped UI in Figma before
+              implementation.
             </p>
             <div className="tag-row">
               <span className="tag">TypeScript</span>
@@ -50,6 +52,8 @@ export default function ExperiencesPage() {
               <span className="tag">React</span>
               <span className="tag">PostgreSQL</span>
               <span className="tag">Docker</span>
+              <span className="tag">DigitalOcean</span>
+              <span className="tag">Figma</span>
             </div>
           </div>
         </article>
@@ -87,6 +91,7 @@ export default function ExperiencesPage() {
         <article className="experience-row">
           <div className="experience-marker" aria-hidden="true">
             <span className="experience-dot"></span>
+            <span className="experience-line"></span>
           </div>
           <div className="experience-content">
             <div className="experience-top">
@@ -102,12 +107,45 @@ export default function ExperiencesPage() {
             <p className="experience-desc">
               Received and labeled vendor shipments of 75+ products, and
               self-taught complex pharmacy software (Fillware) to review and
-              update customer profiles and medical histories.
+              update customer profiles and medical histories. Delivered
+              attentive service at checkout, resolving patient questions and
+              prescription concerns on the spot.
             </p>
             <div className="tag-row">
               <span className="tag">Fillware</span>
-              <span className="tag">Organization</span>
+              <span className="tag">Customer Service</span>
               <span className="tag">Attention to Detail</span>
+            </div>
+          </div>
+        </article>
+
+        <article className="experience-row">
+          <div className="experience-marker" aria-hidden="true">
+            <span className="experience-dot"></span>
+          </div>
+          <div className="experience-content">
+            <div className="experience-top">
+              <div>
+                <span className="experience-role">Soccer Coach &amp; Referee</span>
+                <div className="experience-company">Ontario Soccer</div>
+              </div>
+              <div className="experience-meta">
+                <div>May 2023 — Jun 2025</div>
+                <div>Mississauga, ON</div>
+              </div>
+            </div>
+            <p className="experience-desc">
+              Coached a team of 8 players in weekly 5v5 games, managing
+              formations, substitutions, and in-game strategy while keeping the
+              environment inclusive for every skill level. Also officiated 75+
+              matches across U8 to U15 divisions, applying the Laws of the Game
+              and defusing conflicts among players, coaches, and spectators in
+              fast-paced settings.
+            </p>
+            <div className="tag-row">
+              <span className="tag">Coaching</span>
+              <span className="tag">Officiating</span>
+              <span className="tag">Conflict Resolution</span>
             </div>
           </div>
         </article>
