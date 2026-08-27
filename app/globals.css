@@ -146,7 +146,7 @@ a {
 .hero-title {
   /* Both accent bars derive from these so they stay identical as the title scales. */
   --bar-width: max(0.28rem, 0.07em);
-  --bar-height: 0.85em;
+  --bar-height: 0.73em;
   margin: 0;
   font-family: "Anton", "DM Sans", sans-serif;
   font-weight: 400;
@@ -163,8 +163,11 @@ a {
   display: inline-block;
   width: var(--bar-width);
   height: var(--bar-height);
+  /* cap matches the font's cap height, so the bars span the same band as the
+     uppercase letters instead of the lower x-height band. */
+  height: 1cap;
   background: var(--primary);
-  vertical-align: middle;
+  vertical-align: baseline;
 }
 
 .hero-bar {
@@ -221,7 +224,7 @@ a {
   display: flex;
   align-items: center;
   gap: 1rem;
-  flex: 1;
+  flex: 1 1 13rem;
   padding: 1.25rem 1.5rem;
   border: 1px solid var(--border);
   background: var(--card);
@@ -250,21 +253,14 @@ a {
   color: var(--green);
 }
 
-.link-card-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.4;
+.link-card-icon-email {
+  color: var(--primary);
 }
 
 .link-card-label {
   font-weight: 600;
   font-size: 1rem;
   color: var(--foreground);
-}
-
-.link-card-subtitle {
-  font-size: 0.875rem;
-  color: var(--muted-foreground);
 }
 
 .link-card-arrow {
@@ -279,10 +275,12 @@ a {
 }
 
 /* ---------- Page heading block ---------- */
+/* Shrinks to its title text so the underline can span the full heading. */
 .page-heading {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  width: fit-content;
 }
 
 .page-title {
@@ -297,7 +295,6 @@ a {
 
 .heading-underline {
   height: 0.125rem;
-  width: 4rem;
 }
 
 .heading-underline-red {
@@ -306,6 +303,10 @@ a {
 
 .heading-underline-green {
   background: var(--green);
+}
+
+.heading-underline-black {
+  background: var(--foreground);
 }
 
 .page-description {
@@ -323,7 +324,6 @@ a {
 
 .experience-row {
   display: flex;
-  gap: 2rem;
   border-bottom: 1px solid var(--border);
   padding: 2.5rem 0;
   transition: background 0.2s ease;
@@ -331,33 +331,6 @@ a {
 
 .experience-row:hover {
   background: rgba(226, 221, 209, 0.4);
-}
-
-.experience-marker {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 0.25rem;
-}
-
-.experience-dot {
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  margin-top: 0.375rem;
-  background: var(--green);
-  flex-shrink: 0;
-}
-
-.experience-dot-first {
-  background: var(--primary);
-}
-
-.experience-line {
-  width: 1px;
-  flex: 1;
-  margin-top: 0.5rem;
-  background: var(--line);
 }
 
 .experience-content {
@@ -429,7 +402,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 2rem 0;
   background: var(--background);
   transition: background 0.2s ease;
 }
@@ -518,6 +491,20 @@ a {
   gap: 1.25rem;
 }
 
+.about-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.about-photo {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
 .about-lead {
   margin: 0;
   font-size: 1.1rem;
@@ -577,14 +564,18 @@ a {
 }
 
 .chip-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
   gap: 0.5rem;
 }
 
 .chip {
-  padding: 0.25rem 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.5rem;
   font-size: 0.75rem;
+  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.07em;
   background: var(--muted);
@@ -624,10 +615,7 @@ a {
 @media (min-width: 640px) {
   .link-cards {
     flex-direction: row;
-  }
-
-  .experience-marker {
-    display: flex;
+    flex-wrap: wrap;
   }
 
   .experience-top {
@@ -643,6 +631,16 @@ a {
 
   .projects-grid {
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* Outer card edges stay flush with the page; only the inner gutter is padded. */
+  .project-card {
+    padding-right: 2rem;
+  }
+
+  .project-card:nth-child(even) {
+    padding-right: 0;
+    padding-left: 2rem;
   }
 }
 

@@ -15,10 +15,6 @@ export default function ExperiencesPage() {
 
       <div className="timeline">
         <article className="experience-row">
-          <div className="experience-marker" aria-hidden="true">
-            <span className="experience-dot experience-dot-first"></span>
-            <span className="experience-line"></span>
-          </div>
           <div className="experience-content">
             <div className="experience-top">
               <div className="experience-heading">
@@ -42,18 +38,13 @@ export default function ExperiencesPage() {
               multi-framework dashboard for a multi-tenant consulting SaaS
               platform, cutting consultant time by up to 50%. Designed 25+ REST
               API endpoints backed by PostgreSQL, deployed updates to a
-              DigitalOcean production environment with Mailgun email delivery
-              and Spaces object storage, and prototyped UI in Figma before
-              implementation.
+              DigitalOcean production environment with Spaces object storage,
+              and prototyped UI in Figma before implementation.
             </p>
           </div>
         </article>
 
         <article className="experience-row">
-          <div className="experience-marker" aria-hidden="true">
-            <span className="experience-dot"></span>
-            <span className="experience-line"></span>
-          </div>
           <div className="experience-content">
             <div className="experience-top">
               <div>
@@ -75,10 +66,6 @@ export default function ExperiencesPage() {
         </article>
 
         <article className="experience-row">
-          <div className="experience-marker" aria-hidden="true">
-            <span className="experience-dot"></span>
-            <span className="experience-line"></span>
-          </div>
           <div className="experience-content">
             <div className="experience-top">
               <div>
@@ -101,9 +88,6 @@ export default function ExperiencesPage() {
         </article>
 
         <article className="experience-row">
-          <div className="experience-marker" aria-hidden="true">
-            <span className="experience-dot"></span>
-          </div>
           <div className="experience-content">
             <div className="experience-top">
               <div>

@@ -88,8 +88,10 @@ export default function ProjectsPage() {
             </div>
           </div>
           <p className="project-desc">
-            A full-stack running route generator that creates GPS-accurate loop
-            routes from any map location. Integrates three external REST APIs
+            A full-stack running route generator that builds GPS-accurate loop
+            routes from any map location based on a target distance the user
+            enters, so every route starts and ends in the same place.
+            Integrates three external REST APIs
             (OSRM, Open-Meteo, Overpass) for road-accurate paths, elevation, and
             traffic-signal data, with an iterative radius-scaling algorithm that
             lands routes within 8% of the target distance.

@@ -1,3 +1,7 @@
+import Image from "next/image";
+import headshot from "@/public/faisal_professional_headshot.jpg";
+import runningPhoto from "@/public/faisal_running_photo.jpg";
+
 export const metadata = {
   title: "Faisal Abuosbeh | About Me",
 };
@@ -8,13 +12,28 @@ export default function AboutPage() {
       <div className="page-heading">
         <h1 className="page-title">About Me</h1>
         <span
-          className="heading-underline heading-underline-green"
+          className="heading-underline heading-underline-black"
           aria-hidden="true"
         ></span>
       </div>
 
       <div className="about-grid">
         <div className="about-bio">
+          <div className="about-photos">
+            <Image
+              className="about-photo"
+              src={headshot}
+              alt="Faisal Abuosbeh"
+              sizes="(min-width: 768px) 18rem, 45vw"
+              priority
+            />
+            <Image
+              className="about-photo"
+              src={runningPhoto}
+              alt="Faisal Abuosbeh holding a race medal after a run"
+              sizes="(min-width: 768px) 18rem, 45vw"
+            />
+          </div>
           <p className="about-lead">
             I&apos;m Faisal, a Systems Design Engineering student at the University
             of Waterloo with a strong interest in software engineering and AI.
@@ -25,7 +44,7 @@ export default function AboutPage() {
             actually wanted to exist, not just something to fill a portfolio.
           </p>
           <p>
-            Outside of school I love playing soccer, working out, running, and
+            Outside of school I love playing soccer, exercising, watching movies, and
             spending time with friends and family.
           </p>
         </div>
